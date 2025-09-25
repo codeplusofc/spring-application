@@ -1,10 +1,8 @@
 package com.pecuaria.application.controller;
 
-import com.pecuaria.application.Service.UserService;
+import com.pecuaria.application.service.UserService;
 import com.pecuaria.application.model.UserEntity;
-import com.pecuaria.application.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
