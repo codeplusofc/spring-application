@@ -1,6 +1,5 @@
-package com.pecuaria.application.Service;
+package com.pecuaria.application.service;
 
-import com.pecuaria.application.Validation.UserValidator;
 import com.pecuaria.application.model.UserEntity;
 import com.pecuaria.application.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-import static com.pecuaria.application.Validation.UserValidator.validarCampos;
-import static com.pecuaria.application.Validation.UserValidator.validarUser;
+import static com.pecuaria.application.validation.UserValidator.validarCampos;
+import static com.pecuaria.application.validation.UserValidator.validarUser;
 
 //
 

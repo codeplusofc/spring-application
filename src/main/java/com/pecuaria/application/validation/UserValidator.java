@@ -1,4 +1,4 @@
-package com.pecuaria.application.Validation;
+package com.pecuaria.application.validation;
 
 import com.pecuaria.application.model.UserEntity;
 
