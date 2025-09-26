@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import java.time.Instant;
+@ControllerAdvice
 public class HttpErrorExceptionHandler {
 
     @ExceptionHandler(BadRequestException.class)
@@ -22,6 +22,6 @@ public class HttpErrorExceptionHandler {
     public ResponseEntity<ApiError> notFound(ObjectNotFoundException exception) {
         return buildErrorResponse(HttpStatus.NOT_FOUND,"Nao foi possivel encontrar " + exception.getEntityName());
     }
-
+    //n entendi
 
 }
