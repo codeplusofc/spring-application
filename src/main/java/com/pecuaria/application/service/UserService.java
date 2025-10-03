@@ -11,7 +11,7 @@ import java.util.Optional;
 import static com.pecuaria.application.validation.UserValidator.validarCampos;
 import static com.pecuaria.application.validation.UserValidator.validarUser;
 
-//
+
 
 @Service
 public class UserService {
@@ -34,7 +34,6 @@ public class UserService {
         var userBanco = userRepository.findById(id);
         //validação -> Exception
         validarUser(userBanco);
-
         userBanco.get().setName(userEntity.getName());
         userBanco.get().setCpf(userEntity.getCpf());
         //salvando no banco o usuario atualizado
